@@ -1,26 +1,9 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import {
-    ChakraProvider,
-    theme,
-    Heading,
-    Text,
-    Box,
-    Badge,
-    Flex,
-    Spacer,
-    Button,
-} from "@chakra-ui/react";
+import React from "react";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/MainRoute";
 
 function App() {
-    return (
-        <Box p="2">
-            <Box maxW="2xl" textAlign="center" m="0 auto">
-                <Heading>URL Shortener</Heading>
-                <Text fontSize="xl">Shorten your url here</Text>
-            </Box>
-        </Box>
-    );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
