@@ -1,9 +1,13 @@
 import React from "react";
-import { RouterProvider } from "react-router-dom";
-import router from "./routes/MainRoute";
+import { BrowserRouter, RouterProvider } from "react-router-dom";
+import MainRoute from "./routes/MainRoute";
 
 function App() {
-    return <RouterProvider router={router} />;
+    return (
+        <BrowserRouter>
+            <MainRoute />
+        </BrowserRouter>
+    );
 }
 
 export default App;
