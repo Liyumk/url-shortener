@@ -1,5 +1,4 @@
-import { createBrowserRouter, Route, Routes } from "react-router-dom";
-import ErrorPage from "../pages/errorPage";
+import { Route, Routes } from "react-router-dom";
 import Home from "../pages/home";
 
 const MainRoute = () => {
