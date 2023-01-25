@@ -16,15 +16,6 @@ import { CopyIcon } from "@chakra-ui/icons";
 const Home = () => {
     return (
         <Flex h="100vh" bg={"blue.700"}>
-            {/* <Box
-                h="100vh"
-                w="full"
-                position={"absolute"}
-                zIndex="-1"
-                // bgImage={bgTexture}
-            >
-             
-            </Box> */}
             <Box
                 w={"2xl"}
                 m="auto"
