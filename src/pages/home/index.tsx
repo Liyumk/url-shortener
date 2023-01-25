@@ -13,7 +13,7 @@ import { CopyIcon } from "@chakra-ui/icons";
 
 const Home = () => {
     return (
-        <Flex h="100vh" bg={"blue.600"}>
+        <Flex h="100vh" bg={"blue.900"}>
             <Box
                 w={"2xl"}
                 m="auto"
