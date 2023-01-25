@@ -2,20 +2,18 @@ import React from "react";
 import {
     Box,
     Button,
-    Center,
     Flex,
     Heading,
     Input,
     InputGroup,
     InputRightElement,
     Text,
-    Image,
 } from "@chakra-ui/react";
 import { CopyIcon } from "@chakra-ui/icons";
 
 const Home = () => {
     return (
-        <Flex h="100vh" bg={"blue.700"}>
+        <Flex h="100vh" bg={"blue.600"}>
             <Box
                 w={"2xl"}
                 m="auto"
@@ -35,8 +33,13 @@ const Home = () => {
                             mt="5"
                             fontSize="md"
                             variant={"filled"}
+                            textColor="black"
+                            _focus={{
+                                borderColor: "blue.200",
+                                bg: "gray.100",
+                            }}
                         />
-                        <InputRightElement width="4.5rem" mt="6" mr="1">
+                        <InputRightElement width="5rem" mt="6" mr="1">
                             <Button
                                 size="md"
                                 rounded="sm"
@@ -44,11 +47,11 @@ const Home = () => {
                                 textColor="black"
                                 bg={"gray.300"}
                                 _hover={{
-                                    background: "gray.500",
+                                    background: "gray.400",
                                     textColor: "gray.100",
                                 }}
                             >
-                                Shorten
+                                Shorten!
                             </Button>
                         </InputRightElement>
                     </InputGroup>
@@ -57,17 +60,23 @@ const Home = () => {
                             justify={"space-between"}
                             align={"center"}
                             mt="4"
-                            px="2"
-                            py="1"
-                            bg="gray.400"
+                            pl="4"
+                            pr="4"
+                            py="3"
+                            bg="gray.500"
                             rounded="sm"
                         >
-                            <Text color="gray.700">
+                            <Text textColor="gray.100">
                                 Hey there this is short url
                             </Text>
-                            <Button bg="gray.300">
-                                <CopyIcon fontSize={"20"} color="gray.900" />
-                            </Button>
+                            <CopyIcon
+                                fontSize={"20"}
+                                color="gray.200"
+                                _hover={{
+                                    textColor: "white",
+                                    cursor: "pointer",
+                                }}
+                            />
                         </Flex>
                         <Box textAlign={"center"} mt="5">
                             QR Code image here
