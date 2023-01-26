@@ -8,8 +8,11 @@ import {
     InputGroup,
     InputRightElement,
     Text,
+    Center,
 } from "@chakra-ui/react";
 import { CopyIcon } from "@chakra-ui/icons";
+
+import QrCode from "./components/QrCode";
 
 const Home = () => {
     return (
@@ -78,9 +81,9 @@ const Home = () => {
                                 }}
                             />
                         </Flex>
-                        <Box textAlign={"center"} mt="5">
-                            QR Code image here
-                        </Box>
+                        <Center alignItems={"center"} mt="10" h={150}>
+                            <QrCode size={150} />
+                        </Center>
                     </Box>
                 </Box>
             </Box>
